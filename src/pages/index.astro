@@ -16,8 +16,10 @@ const resume = o.resume && asset(o.resume);
 const projects = await getProjects();
 const experiments = await getExperiments();
 
-let featured = projects.filter(p => p.data.featured).slice(0, 3);
-if (!featured.length) featured = projects.slice(0, 3);
+// Archived projects stay on the Projects page but leave the home page.
+const current = projects.filter(p => p.data.status !== 'Archived');
+let featured = current.filter(p => p.data.featured).slice(0, 3);
+if (!featured.length) featured = current.slice(0, 3);
 
 const idParts = [o.role && o.company ? `${o.role} at ${o.company}` : o.role, o.location].filter(Boolean);
 
@@ -112,7 +114,7 @@ const actions = [
 
   <section class="contact ink" id="contact" aria-labelledby="contact-title">
     <h2 id="contact-title">{SITE.contact.headline}</h2><p>{SITE.contact.body}</p>
-    <a class="pill" {...mailAttrs()}>{SITE.contact.cta}</a>
+    <a class="pill" data-mail-text {...mailAttrs()}>{SITE.contact.cta}</a>
     <div class="tile-links">{contactLinks.map(l => <More href={l.url} label={l.label} />)}</div>
   </section>
 </main>

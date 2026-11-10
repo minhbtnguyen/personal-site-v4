@@ -113,7 +113,11 @@ document.addEventListener('click', e => {
 });
 
 /* ---------- Email links (see mailAttrs in src/lib/render.ts) ---------- */
-document.querySelectorAll<HTMLAnchorElement>('a[data-mail]').forEach(a => { a.href = `mailto:${atob(a.dataset.mail!)}`; });
+document.querySelectorAll<HTMLAnchorElement>('a[data-mail]').forEach(a => {
+  const address = atob(a.dataset.mail!);
+  a.href = `mailto:${address}`;
+  if (a.hasAttribute('data-mail-text')) a.textContent = address; // the address as the label; without JavaScript the static label stays
+});
 
 /* ---------- Filter bars: fade whichever edge has more tabs to scroll to ---------- */
 function mountSegFade() {

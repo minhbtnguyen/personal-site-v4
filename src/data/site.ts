@@ -29,13 +29,14 @@ export const SITE = {
     links: [
       { label: 'GitHub', url: 'https://github.com/minhbtnguyen' },
       { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=9Pg_ZTgAAAAJ&hl=en' },
-      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/minhbtnguyen/' }
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/minhbtnguyen/' },
+      { label: 'X', url: 'https://x.com/minhbtnguyen' }
     ] as Link[]
   },
 
   home: {
     headline: 'Production ML, end to end.',
-    intro: 'Research · Agentic AI · MLOps · Product',
+    intro: 'Agentic AI · MLOps · Research',
     featuredTitle: 'Projects.',
     latestTitle: 'Lab.'
   },
@@ -51,7 +52,7 @@ export const SITE = {
   },
 
   about: {
-    statement: 'At BlackRock since 2024, building ML and agentic systems for finance. Before that: Tesla, Homebase (YC), Shield AI and ML research labs.', // optional; set to '' to remove
+    statement: 'At BlackRock since 2024, building ML and agentic systems for finance. Before that: Tesla, startups and research labs.', // optional; set to '' to remove
     link: { label: 'Full experience on LinkedIn', url: 'https://www.linkedin.com/in/minhbtnguyen/' } as Link | undefined
   },
 
@@ -62,11 +63,11 @@ export const SITE = {
   experience: [
     { role: 'AI & ML Engineer II', org: 'BlackRock', team: 'Platform Engineering', location: 'Philadelphia, PA', start: '2024-05', end: '' },
     { role: 'Software Engineer', org: 'Tesla', team: 'Automation & Data Systems', location: 'Fremont, CA', start: '2024-01', end: '2024-05' },
-    { role: 'Graduate Research Assistant', org: 'Virginia Tech', team: 'Sanghani Center for AI & Data Analytics', location: 'Falls Church, VA', start: '2023-04', end: '2023-12' },
+    { role: 'Graduate Research Assistant', org: 'Virginia Tech', team: 'Department of Computer Science', location: 'Falls Church, VA', start: '2023-04', end: '2023-12' },
     { role: 'Software Engineer', org: 'Homebase (YC W21)', location: 'Ho Chi Minh City, Vietnam', start: '2023-06', end: '2023-09' },
     { role: 'Graduate Research Assistant', org: 'Virginia Tech', team: 'Commonwealth Cyber Initiative', location: 'Arlington, VA', start: '2021-05', end: '2022-08' },
     { role: 'Research Assistant', org: 'Virginia Tech', team: 'Terrestrial Robotics Engineering & Controls Lab', location: 'Blacksburg, VA', start: '2021-09', end: '2022-05' },
-    { role: 'Machine Learning Engineer', org: 'Shield AI', team: 'Gamebreaker', location: 'Alexandria, VA', start: '2021-05', end: '2021-08' },
+    { role: 'Machine Learning Engineer', org: 'Heron Systems (acquired by Shield AI)', team: 'Gamebreaker', location: 'Alexandria, VA', start: '2021-05', end: '2021-08' },
     { role: 'Research Assistant', org: 'William & Mary', team: 'geoLab', location: 'Williamsburg, VA', start: '2020-09', end: '2021-05' },
     { role: 'Research Assistant', org: 'Virginia Tech', team: 'Hybrid Electric Vehicle Team', location: 'Blacksburg, VA', start: '2020-09', end: '2021-05' },
     { role: 'Teaching Assistant', org: 'Virginia Tech', team: 'ECE Department', location: 'Blacksburg, VA', start: '2020-09', end: '2021-05' },
@@ -77,15 +78,14 @@ export const SITE = {
   skillsTitle: 'Skills',
   /* Highlighted in the list: the core skills for ML engineering roles. Names
      must match items below exactly. */
-  keySkills: ['PyTorch', 'MLflow', 'ML Inference', 'ONNX Runtime', 'Triton Inference Server', 'vLLM', 'LLMs', 'RAG', 'Multi-Agent Orchestration', 'LangChain', 'LangGraph', 'Python', 'C++', 'SQL', 'FastAPI', 'Azure', 'Docker', 'Kubernetes', 'CI/CD', 'Grafana', 'Snowflake', 'Airflow'],
+  keySkills: ['PyTorch', 'LangChain', 'Python', 'C++', 'SQL', 'FastAPI', 'Azure', 'Docker', 'Kubernetes', 'CI/CD', 'Grafana', 'Snowflake'],
   skills: [
-    { group: 'AI / ML', items: ['PyTorch', 'TensorFlow', 'MLflow', 'ML Inference', 'ONNX Runtime', 'TensorRT', 'Triton Inference Server', 'vLLM', 'Quantization'] },
-    { group: 'Agentic AI', items: ['LLMs', 'RAG', 'Multi-Agent Orchestration', 'LangGraph', 'LangChain'] },
-    { group: 'Backend', items: ['Python', 'Go', 'C++', 'Rust', 'SQL', 'FastAPI', 'Celery', 'Flask'] },
+    { group: 'AI / ML', items: ['PyTorch', 'TensorFlow', 'LangChain', 'Google ADK'] },
+    { group: 'Backend', items: ['Python', 'Go', 'C++', 'SQL', 'FastAPI'] },
     { group: 'Frontend', items: ['Streamlit', 'Dash', 'ReactJS'] },
-    { group: 'Cloud & DevOps', items: ['AWS', 'Azure', 'ADK', 'Kubernetes', 'Docker', 'CI/CD', 'Grafana', 'Jenkins'] },
-    { group: 'Data', items: ['Snowflake', 'Airflow', 'PostgreSQL', 'Redis', 'MySQL', 'MSSQL', 'InfluxDB', 'Power BI'] },
-    { group: 'AI Tooling', items: ['Claude Code', 'GitHub Copilot'] }
+    { group: 'Cloud', items: ['AWS', 'Azure', 'Kubernetes', 'Docker', 'CI/CD', 'Grafana', 'Jenkins'] },
+    { group: 'Data', items: ['Snowflake', 'PostgreSQL', 'Redis', 'MySQL', 'InfluxDB'] },
+    { group: 'Tooling', items: ['Claude Code', 'GitHub Copilot'] }
   ],
 
   contact: {
