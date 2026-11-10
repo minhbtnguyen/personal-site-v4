@@ -1,14 +1,14 @@
 name: RentalGPT
 categories: [Apps, Models]
 year: 2023
-status: Live
+status: Archived
 publish: Publish
 tagline: Rental analytics platform combining predictive modeling and a GPT-powered assistant, serving landlords, renters, and analysts from a single data pipeline.
+summary: The live app is no longer hosted. The source code remains available on GitHub.
 stack: [Python, SQL, Dash, Docker, Kubernetes, Google Cloud Platform]
 award: Winner, Plotly ChatGPT & Generative AI Hackathon
 cover:
   src: ./images/rentalgpt-card.webp   # crop of the live app; rentalgpt.webp is the Plotly gallery screenshot
   alt: RentalGPT app overview with its navigation sidebar
-url: https://rentalgpt-dash.onrender.com/
 links:
   source: https://github.com/minhbtnguyen/rentalgpt
